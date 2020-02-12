@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('Checking-out-code') {
       steps {
         git(url: 'https://github.com/SaraBenShabbat/docker-demo.git', branch: 'master', credentialsId: 'Git-Creds', poll: true)
       }
